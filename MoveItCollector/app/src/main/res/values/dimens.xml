@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="progress_bar_size">60dp</dimen>
+
+
+    <!-- CardView -->
+    <dimen name="card_view_elevation">8dp</dimen>
+    <dimen name="card_view_spacing">8dp</dimen>
+    <dimen name="card_view_min_height">200dp</dimen>
+
+    <dimen name="card_view_margin_16dp">16dp</dimen>
+    <dimen name="card_view_margin_8dp">8dp</dimen>
+    <dimen name="card_view_margin_4dp">4dp</dimen>
+    <dimen name="card_view_margin_2dp">2dp</dimen>
+    <dimen name="activity_field_radius">10dp</dimen>
+
+
+    <!-- Typography -->
+    <dimen name="headline5">24sp</dimen>
+    <item name="headline5_spacing_multiplier" format="float" type="fraction">0.0</item>
+    <dimen name="headline6">20sp</dimen>
+    <item name="headline6_spacing_multiplier" format="float" type="fraction">0.15</item>
+    <dimen name="subtitle1">16sp</dimen>
+    <item name="subtitle1_spacing_multiplier" format="float" type="fraction">0.15</item>
+    <dimen name="subtitle2">14sp</dimen>
+    <item name="subtitle2_spacing_multiplier" format="float" type="fraction">0.1</item>
+    <dimen name="body1">16sp</dimen>
+    <item name="body1_spacing_multiplier" format="float" type="fraction">0.5</item>
+    <dimen name="body2">14sp</dimen>
+    <item name="body2_spacing_multiplier" format="float" type="fraction">0.25</item>
+    <dimen name="button_text">14sp</dimen>
+    <item name="button_text_spacing_multiplier" format="float" type="fraction">0.75</item>
+    <dimen name="subtitle_splash">12sp</dimen>
+
+    <!-- FAB - FloatActionButton -->
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+    <!-- TextInputLayout -->
+    <dimen name="text_input_layout_margin">16dp</dimen>
+    <dimen name="text_input_layout_padding">8dp</dimen>
+    <dimen name="birthdate_width_bigger">260dp</dimen>
+    <dimen name="birthdate_width">160dp</dimen>
+
+    <!-- RecyclerView -->
+    <dimen name="recycler_view_margin">16dp</dimen>
+    <dimen name="recycler_view_min_height">30dp</dimen>
+
+    <!-- UI -->
+    <dimen name="ui_lateral_margin">16dp</dimen>
+    <dimen name="radio_group_margin_start">64dp</dimen>
+    <dimen name="chronometer_text_size">40sp</dimen>
+    <dimen name="chronometer_margin_top">50dp</dimen>
+    <dimen name="chronometer_margin_between">32dp</dimen>
+
+
+    <dimen name="logo_width">250dp</dimen>
+    <dimen name="logo_height">120dp</dimen>
+    <dimen name="logo_margin">50dp</dimen>
+    <dimen name="logo_width_small">150dp</dimen>
+    <dimen name="logo_height_small">72dp</dimen>
+    <dimen name="logo_margin_small">25dp</dimen>
+
+    <dimen name="google_sign_button_width">300dp</dimen>
+    <dimen name="google_sign_button_margin">150dp</dimen>
+
+    <dimen name="profile_image_width">100dp</dimen>
+    <dimen name="profile_image_height">100dp</dimen>
+    <dimen name="profile_image_width_toolbar">65dp</dimen>
+    <dimen name="profile_image_height_toolbar">65dp</dimen>
+    <dimen name="profile_image_margin">16dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="toolbar_height_bigger">180dp</dimen>
+    <dimen name="border_primary_dark_radius">5dp</dimen>
+    <dimen name="widget_width">180dp</dimen>
+    <dimen name="widget_height">110dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

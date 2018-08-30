@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".VolunteerActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height_bigger"
+        android:background="@drawable/border_primary_dark"
+        android:elevation="@dimen/toolbar_elevation">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_input_layout_margin">
+
+            <TextView
+                android:id="@+id/tvVolunteerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="@dimen/text_input_layout_padding"/>
+
+            <TextView
+                android:id="@+id/tvVolunteerNameField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_input_layout_padding"
+                android:fontFamily="@font/worksanssemibold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintStart_toEndOf="@+id/tvVolunteerGender"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tvVolunteerAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/age"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle1"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerNameField" />
+
+            <TextView
+                android:id="@+id/tvVolunteerAgeField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_input_layout_padding"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                android:fontFamily="@font/worksanssemibold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintStart_toEndOf="@+id/tvVolunteerGender"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerNameField"
+                tools:text="@string/age" />
+
+            <TextView
+                android:id="@+id/tvVolunteerGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/gender"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle1"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerAgeField" />
+
+            <TextView
+                android:id="@+id/tvVolunteerGenderField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_input_layout_padding"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                android:fontFamily="@font/worksanssemibold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintStart_toEndOf="@+id/tvVolunteerGender"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerAgeField"
+                tools:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/tvVolunteerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/email"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle1"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerGenderField" />
+
+            <TextView
+                android:id="@+id/tvVolunteerEmailField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_input_layout_padding"
+                android:layout_marginTop="@dimen/text_input_layout_padding"
+                android:fontFamily="@font/worksanssemibold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintStart_toEndOf="@+id/tvVolunteerGender"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteerGenderField"
+                tools:text="@string/email" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvActivities"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:minHeight="@dimen/recycler_view_min_height"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

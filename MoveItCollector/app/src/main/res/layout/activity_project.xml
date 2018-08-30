@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_primary_dark_radius"
+        android:background="@color/colorPrimaryDark"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/border_primary_dark"
+        android:elevation="@dimen/toolbar_elevation">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvProjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_input_layout_margin"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/black"
+                android:textSize="@dimen/headline6"
+                android:hint="@string/project_name"
+                android:transitionName="@string/project_name_transition"/>
+
+
+            <ImageView
+                android:id="@+id/ivCSVFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attach_file_white_24dp"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/text_input_layout_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/text_input_layout_margin"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/ui_lateral_margin"
+            android:layout_marginStart="@dimen/ui_lateral_margin">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/add_activity_label"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/add_activity_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/card_view_margin_8dp"
+                android:layout_marginStart="8dp"
+                android:background="@mipmap/ic_add_new_label"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/recycler_view_margin"
+            android:background="@drawable/border"
+            android:minHeight="@dimen/recycler_view_min_height"
+            android:padding="@dimen/card_view_margin_2dp"
+            android:scrollbars="vertical" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/ui_lateral_margin"
+            android:layout_marginTop="@dimen/text_input_layout_margin"
+            android:layout_marginStart="@dimen/ui_lateral_margin">
+
+            <TextView
+                android:id="@+id/tvVolunteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksanssemibold"
+                android:text="@string/add_volunteer"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/subtitle1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btAddVolunteer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/card_view_margin_8dp"
+                android:layout_marginStart="8dp"
+                android:background="@mipmap/ic_add_new_label"
+                app:layout_constraintBottom_toTopOf="@+id/tvVolunteer"
+                app:layout_constraintStart_toEndOf="@+id/tvVolunteer"
+                app:layout_constraintTop_toBottomOf="@+id/tvVolunteer" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvVolunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/recycler_view_margin"
+            android:background="@drawable/border"
+            android:minHeight="@dimen/recycler_view_min_height"
+            android:padding="@dimen/card_view_margin_2dp"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/btGenerateCSVFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/action_generate_csv"
+            android:theme="@style/PrimaryFlatButton" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

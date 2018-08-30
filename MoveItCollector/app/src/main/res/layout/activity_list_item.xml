@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_view_margin_2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input_layout_margin"
+            android:padding="@dimen/text_input_layout_padding"
+            android:hint="Activity"
+            app:layout_constraintBottom_toTopOf="@+id/ivFolder"
+            app:layout_constraintStart_toEndOf="@id/ivFolder"
+            app:layout_constraintTop_toBottomOf="@+id/ivFolder" />
+
+        <ImageView
+            android:id="@+id/ivFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_input_layout_margin"
+            android:src="@drawable/ic_folder_open_48dp"
+            app:layout_constraintBottom_toTopOf="@+id/btCollectOrSee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCollectOrSee" />
+
+        <Button
+            android:id="@+id/btCollectOrSee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_collect"
+            android:theme="@style/PrimaryFlatButtonSmall"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/text_input_layout_margin"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

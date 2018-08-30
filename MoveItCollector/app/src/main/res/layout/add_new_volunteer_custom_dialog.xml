@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/text_input_layout_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_input_layout_margin"
+        android:layout_marginEnd="@dimen/text_input_layout_margin"
+        android:text="@string/add_volunteer"
+        android:fontFamily="@font/worksansbold"
+        android:textSize="@dimen/headline6"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilVolunteerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_input_layout_margin">
+
+        <EditText
+            android:id="@+id/etVolunteerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="@string/volunteer_name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilVolunteerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_input_layout_margin"
+        android:layout_marginStart="@dimen/text_input_layout_margin"
+        android:layout_marginBottom="@dimen/text_input_layout_margin">
+
+        <EditText
+            android:id="@+id/etVolunteerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="@string/volunteer_email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_input_layout_margin"
+        android:layout_marginStart="@dimen/text_input_layout_margin"
+        android:layout_marginBottom="@dimen/text_input_layout_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilVolunteerBirthday"
+            android:layout_width="@dimen/birthdate_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_input_layout_margin"
+            android:layout_marginStart="@dimen/text_input_layout_margin"
+            app:layout_constraintEnd_toStartOf="@+id/btAddDate"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/etVolunteerBirthday"
+                android:layout_width="@dimen/birthdate_width"
+                android:layout_height="wrap_content"
+                android:hint="@string/volunteer_birthday"
+                android:inputType="date"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btAddDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:drawableEnd="@drawable/ic_date_range_24dp"
+            android:theme="@style/PrimaryFlatButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/radio_group_margin_start"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="@dimen/text_input_layout_margin">
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/male" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/border_accent">
+
+    <ImageView
+        android:id="@+id/widget_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:src="@drawable/widget_logo"
+        android:layout_gravity="left"
+        android:padding="@dimen/card_view_margin_4dp"
+        android:background="@drawable/border_accent"/>
+
+    <ListView
+        android:id="@+id/projects_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/border_primary"/>
+
+</LinearLayout>

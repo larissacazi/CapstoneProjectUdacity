@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zimmermann.larissa.moveitcollector">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/widget_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/widget_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppThemeWithoutBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SplashActivity" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppThemeWithoutBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeWithoutBar" />
+        <activity
+            android:name=".ProjectActivity"
+            android:theme="@style/AppThemeWithoutBar" />
+        <activity
+            android:name=".VolunteerActivity"
+            android:theme="@style/AppThemeWithoutBar" />
+        <activity
+            android:name=".CollectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithoutBar" />
+
+        <receiver android:name=".widget.MoveItAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="zimmermann.moveitcollector.widget.WIDGET_BUTTON_ACTION"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/move_it_app_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.ListViewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <service android:name=".widget.WidgetUpdateService" />
+    </application>
+
+</manifest>

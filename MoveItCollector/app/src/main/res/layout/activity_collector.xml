@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CollectorActivity">
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chronometer_margin_top"
+        android:gravity="center"
+        android:src="@drawable/ic_panorama_fish_eye_240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/chronometer_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCircle"
+        app:layout_constraintEnd_toEndOf="@+id/ivCircle"
+        app:layout_constraintStart_toStartOf="@+id/ivCircle"
+        app:layout_constraintTop_toTopOf="@+id/ivCircle" />
+
+    <ImageView
+        android:id="@+id/ivPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/chronometer_margin_between"
+        android:layout_marginTop="@dimen/chronometer_margin_top"
+        android:src="@drawable/ic_play_arrow_64dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivCircle"
+        app:layout_constraintStart_toEndOf="@id/ivStopButton"
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+
+    <ImageView
+        android:id="@+id/ivPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/chronometer_margin_between"
+        android:layout_marginTop="@dimen/chronometer_margin_top"
+        android:src="@drawable/ic_pause_64dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivCircle"
+        app:layout_constraintStart_toEndOf="@id/ivStopButton"
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+
+    <ImageView
+        android:id="@+id/ivStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/chronometer_margin_between"
+        android:layout_marginTop="@dimen/chronometer_margin_top"
+        android:src="@drawable/ic_stop_64dp"
+        app:layout_constraintEnd_toStartOf="@id/ivPlayButton"
+        app:layout_constraintStart_toStartOf="@+id/ivCircle"
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+
+</android.support.constraint.ConstraintLayout>
