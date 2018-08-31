@@ -22,6 +22,7 @@ import zimmermann.larissa.moveitcollector.ProjectActivity;
 import zimmermann.larissa.moveitcollector.R;
 import zimmermann.larissa.moveitcollector.database.Project;
 import zimmermann.larissa.moveitcollector.repository.MainActivityViewModel;
+import zimmermann.larissa.moveitcollector.utils.DataUtils;
 import zimmermann.larissa.moveitcollector.utils.FileManager;
 
 public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectViewHolder>{
@@ -46,7 +47,9 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectV
     @Override
     public void onBindViewHolder(@NonNull ProjectViewHolder holder, int position) {
         holder.mProjectTitle.setText(mProjectList.get(position).getName());
-        holder.mProjectStartDate.setText(mContext.getString(R.string.created_word) + mProjectList.get(position).getStartDate().toString());
+        holder.mProjectStartDate.setText(mContext.getString(R.string.created_word) + " "
+                + DataUtils.convertDateToString(mProjectList.get(position).getStartDate()));
+                //+ mProjectList.get(position).getStartDate().toString());
     }
 
     @Override

@@ -49,7 +49,7 @@ public class DataUtils {
 
     public static String convertDateToString(Date date) {
         String dateString = null;
-        SimpleDateFormat sdfr = new SimpleDateFormat("dd/MMM/yyyy");
+        SimpleDateFormat sdfr = new SimpleDateFormat("dd/MMM/yyyy hh:mm a");
 
         try{
             dateString = sdfr.format( date );

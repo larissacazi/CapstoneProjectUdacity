@@ -96,5 +96,5 @@
     <string name="logo_description">Logo description</string>
     <string name="widget_toolbar_view_description">Widget toolbar view description</string>
     <string name="folder_file_container">Folder image that indicates if the file was generated</string>
-    <string name="created_word">Created</string>
+    <string name="created_word">Created on</string>
 </resources>
