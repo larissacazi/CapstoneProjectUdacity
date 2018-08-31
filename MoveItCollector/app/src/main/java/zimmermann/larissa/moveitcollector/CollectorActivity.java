@@ -26,6 +26,7 @@ public class CollectorActivity extends AppCompatActivity {
     public static final String VOLUNTEER_NAME = "VOLUNTEER_NAME_COLLECTOR";
     public static final String ACTIVITY_NAME = "ACTIVITY_NAME_COLLECTOR";
     public static final int WRITE_EXTERNAL_STORAGE_PERMISSION = 1;
+    public static final int READ_EXTERNAL_STORAGE_PERMISSION = 2;
 
     @BindView(R.id.chronometer)
     Chronometer chronometer;

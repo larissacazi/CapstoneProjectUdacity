@@ -155,6 +155,7 @@ public class ProjectActivity extends AppCompatActivity {
     @OnClick(R.id.ivCSVFile)
     public void shareCSVFile(){
         if(mProject != null) {
+            PermissionUtils.checkReadExternalStoragePermission(this);
             File file = CsvGenerator.generateCSVFileName(this, mProject);
             if(file.exists()) {
                 Intent intentShareFile = new Intent(Intent.ACTION_SEND);
