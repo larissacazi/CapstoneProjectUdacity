@@ -9,7 +9,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/border_primary_dark_radius"
-        android:background="@color/colorPrimaryDark"/>
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_bar_description"/>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -43,7 +44,8 @@
                 android:layout_marginEnd="@dimen/text_input_layout_margin"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/share_csv_file"/>
         </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.Toolbar>

@@ -46,7 +46,7 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjectV
     @Override
     public void onBindViewHolder(@NonNull ProjectViewHolder holder, int position) {
         holder.mProjectTitle.setText(mProjectList.get(position).getName());
-        holder.mProjectStartDate.setText("Created " + mProjectList.get(position).getStartDate().toString());
+        holder.mProjectStartDate.setText(mContext.getString(R.string.created_word) + mProjectList.get(position).getStartDate().toString());
     }
 
     @Override

@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
         android:src="@drawable/widget_logo"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:padding="@dimen/card_view_margin_4dp"
-        android:background="@drawable/border_accent"/>
+        android:background="@drawable/border_accent"
+        android:contentDescription="@string/widget_toolbar_view_description"/>
 
     <ListView
         android:id="@+id/projects_list_view"

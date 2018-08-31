@@ -34,6 +34,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
     public void onBackPressed() {
         finish();
     }

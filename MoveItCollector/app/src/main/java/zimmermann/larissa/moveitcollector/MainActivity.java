@@ -106,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     private void settingResearcherProfileImage() {
         SharedPreferences sharedPref = getSharedPreferences(MainActivity.RESEARCHER_INFO_FILE, Context.MODE_PRIVATE);
         researcherEmail = sharedPref.getString(RESEARCHER_EMAIL, "");

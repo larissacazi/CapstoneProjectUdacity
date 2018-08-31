@@ -10,7 +10,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/border_primary_dark_radius"
-        android:background="@color/colorPrimaryDark"/>
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_bar_description"/>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -34,7 +35,8 @@
             android:layout_height="@dimen/logo_height_small"
             android:layout_gravity="center"
             android:src="@drawable/logo"
-            android:transitionName="@string/logo_splash" />
+            android:transitionName="@string/logo_splash"
+            android:contentDescription="@string/logo_description"/>
 
     </android.support.v7.widget.Toolbar>
 

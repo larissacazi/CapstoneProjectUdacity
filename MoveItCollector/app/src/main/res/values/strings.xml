@@ -87,4 +87,14 @@
     <string name="project">Project</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="activity">Activity</string>
+    <string name="app_bar_description">AppBar view</string>
+    <string name="chronometer_view">Chronometer view</string>
+    <string name="chronometer_view_play_button">Chronometer view, play button</string>
+    <string name="chronometer_view_pause_button">Chronometer view pause button</string>
+    <string name="chronometer_view_stop_button">Chronometer view, stop button</string>
+    <string name="logo_description">Logo description</string>
+    <string name="widget_toolbar_view_description">Widget toolbar view description</string>
+    <string name="folder_file_container">Folder image that indicates if the file was generated</string>
+    <string name="created_word">Created</string>
 </resources>

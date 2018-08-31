@@ -16,7 +16,8 @@
         android:src="@drawable/ic_panorama_fish_eye_240dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/chronometer_view"/>
 
     <Chronometer
         android:id="@+id/chronometer"
@@ -40,7 +41,8 @@
         android:src="@drawable/ic_play_arrow_64dp"
         app:layout_constraintEnd_toEndOf="@+id/ivCircle"
         app:layout_constraintStart_toEndOf="@id/ivStopButton"
-        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle"
+        android:contentDescription="@string/chronometer_view_play_button"/>
 
     <ImageView
         android:id="@+id/ivPauseButton"
@@ -51,7 +53,8 @@
         android:src="@drawable/ic_pause_64dp"
         app:layout_constraintEnd_toEndOf="@+id/ivCircle"
         app:layout_constraintStart_toEndOf="@id/ivStopButton"
-        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle"
+        android:contentDescription="@string/chronometer_view_pause_button"/>
 
     <ImageView
         android:id="@+id/ivStopButton"
@@ -62,6 +65,7 @@
         android:src="@drawable/ic_stop_64dp"
         app:layout_constraintEnd_toStartOf="@id/ivPlayButton"
         app:layout_constraintStart_toStartOf="@+id/ivCircle"
-        app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivCircle"
+        android:contentDescription="@string/chronometer_view_stop_button"/>
 
 </android.support.constraint.ConstraintLayout>

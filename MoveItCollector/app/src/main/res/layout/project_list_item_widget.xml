@@ -29,6 +29,6 @@
         android:layout_gravity="end"
         android:layout_marginEnd="@dimen/card_view_margin_8dp"
         android:layout_marginBottom="@dimen/card_view_margin_8dp"
-        android:gravity="right|bottom"/>
+        android:gravity="end|bottom"/>
 
 </LinearLayout>

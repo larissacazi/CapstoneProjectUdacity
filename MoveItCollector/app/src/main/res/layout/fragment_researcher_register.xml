@@ -14,7 +14,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/logo_margin_small"
         android:src="@drawable/logo"
-        android:transitionName="@string/logo_splash" />
+        android:transitionName="@string/logo_splash"
+        android:contentDescription="@string/logo_description" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/ivProfilePhoto"

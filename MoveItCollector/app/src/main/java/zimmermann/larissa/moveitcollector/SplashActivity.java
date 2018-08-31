@@ -50,4 +50,9 @@ public class SplashActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
 }

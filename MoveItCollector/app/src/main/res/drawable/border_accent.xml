@@ -4,5 +4,5 @@
     <stroke android:color="@color/colorAccent" android:width="1dp"/>
     <corners android:radius="@dimen/border_primary_dark_radius" />
     <gradient android:startColor="@color/colorAccent" android:useLevel="true"/>
-    <solid android:color="@color/colorAccent"></solid>
+    <solid android:color="@color/colorAccent"/>
 </shape>

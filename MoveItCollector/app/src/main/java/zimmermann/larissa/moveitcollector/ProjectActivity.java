@@ -132,6 +132,11 @@ public class ProjectActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     private void checkCSVFileVisibility() {
         if(mProject != null) {
             File file = CsvGenerator.generateCSVFileName(this, mProject);

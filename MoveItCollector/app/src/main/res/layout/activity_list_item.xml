@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/text_input_layout_margin"
             android:padding="@dimen/text_input_layout_padding"
-            android:hint="Activity"
+            android:hint="@string/activity"
             app:layout_constraintBottom_toTopOf="@+id/ivFolder"
             app:layout_constraintStart_toEndOf="@id/ivFolder"
             app:layout_constraintTop_toBottomOf="@+id/ivFolder" />
@@ -28,7 +28,8 @@
             android:src="@drawable/ic_folder_open_48dp"
             app:layout_constraintBottom_toTopOf="@+id/btCollectOrSee"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btCollectOrSee" />
+            app:layout_constraintTop_toBottomOf="@+id/btCollectOrSee"
+            android:contentDescription="@string/folder_file_container"/>
 
         <Button
             android:id="@+id/btCollectOrSee"

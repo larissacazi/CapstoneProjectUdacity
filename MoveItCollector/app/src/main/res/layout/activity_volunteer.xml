@@ -10,6 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="9dp"
+        android:contentDescription="@string/app_bar_description"
         android:background="@color/colorPrimaryDark" />
 
     <android.support.v7.widget.Toolbar

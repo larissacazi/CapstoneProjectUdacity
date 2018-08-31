@@ -66,7 +66,7 @@ public class VolunteerActivity extends AppCompatActivity {
                 tvVolunteerName.setText(volunteer.getName());
                 tvVolunteerEmail.setText(volunteer.getEmail());
                 tvVolunteerGender.setText(DataUtils.convertGender(volunteer.getGender(), getApplicationContext()));
-                tvVolunteerAge.setText("" + DataUtils.convertBirthdayToAge(volunteer.getBirthday()) + " " + getString(R.string.years));
+                tvVolunteerAge.setText(DataUtils.convertBirthdayToAge(volunteer.getBirthday()) + " " + getString(R.string.years));
             }
         });
 
@@ -77,5 +77,10 @@ public class VolunteerActivity extends AppCompatActivity {
                 activityVolunteerAdapter.setActivityList(activities);
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 }
